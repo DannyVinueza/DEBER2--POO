@@ -24,19 +24,21 @@ public class principal {
                         int intAnio = 0;
                         System.out.println("\n\n-------------------------------------------------------------");
                         System.out.print("Ingrese la marca del vehiculo " + (i + 1) + ": ");
-                        inMarca = sc.next();
+                        sc.nextLine();
+                        inMarca = sc.nextLine();
                         arregloVehiculos[i].setMarca(inMarca);
                         System.out.print("Ingrese el modelo del vehiculo " + (i + 1) + ": ");
-                        inModelo = sc.next();
+                        inModelo = sc.nextLine();
                         arregloVehiculos[i].setModelo(inModelo);
                         System.out.print("Ingrese el anio del vehiculo " + (i + 1) + ": ");
                         intAnio = sc.nextInt();
                         arregloVehiculos[i].setAnio(intAnio);
                         System.out.print("Ingrese el color del vehiculo " + (i + 1) + ": ");
-                        inColor = sc.next();
+                        sc.nextLine();
+                        inColor = sc.nextLine();
                         arregloVehiculos[i].setColor(inColor);
                         System.out.print("Ingrese la categoria de vehiculo " + (i + 1) + ": ");
-                        inTipo = sc.next();
+                        inTipo = sc.nextLine();
                         arregloVehiculos[i].setTipo(inTipo);
                     }
                 }break;
