@@ -18,26 +18,33 @@ public class principal {
             switch(op){
                 case 1:{
                     System.out.println("1. Ingresar 5 vehiculos");
+                    sc.nextLine();
                     for (int i = 0; i < arregloVehiculos.length; i++){
                         arregloVehiculos[i] = new vehiculos();
                         String inMarca = " ", inModelo = " ", inColor = " ", inTipo = " ";
                         int intAnio = 0;
                         System.out.println("\n\n-------------------------------------------------------------");
+
                         System.out.print("Ingrese la marca del vehiculo " + (i + 1) + ": ");
-                        sc.nextLine();
                         inMarca = sc.nextLine();
                         arregloVehiculos[i].setMarca(inMarca);
+
                         System.out.print("Ingrese el modelo del vehiculo " + (i + 1) + ": ");
+                        //sc.nextLine();
                         inModelo = sc.nextLine();
                         arregloVehiculos[i].setModelo(inModelo);
+
                         System.out.print("Ingrese el anio del vehiculo " + (i + 1) + ": ");
                         intAnio = sc.nextInt();
                         arregloVehiculos[i].setAnio(intAnio);
+
                         System.out.print("Ingrese el color del vehiculo " + (i + 1) + ": ");
                         sc.nextLine();
                         inColor = sc.nextLine();
                         arregloVehiculos[i].setColor(inColor);
+
                         System.out.print("Ingrese la categoria de vehiculo " + (i + 1) + ": ");
+                        //sc.nextLine();
                         inTipo = sc.nextLine();
                         arregloVehiculos[i].setTipo(inTipo);
                     }
