@@ -5,12 +5,13 @@ public class vehiculos {
     String color;
     String tipo;
 
-    public void vehiculos(){
+    /*public void vehiculos(){
         marca = "Chevrolet";
         modelo = "Camaro";
         anio = 2010;
+        color = "Rojo"
         tipo = "auto";
-    }
+    }*/
 
     public String getMarca() {
         return marca;
@@ -51,4 +52,5 @@ public class vehiculos {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
+
 }
